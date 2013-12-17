@@ -36,3 +36,11 @@ alias grep='grep --color=auto'
 alias ls='ls --color=auto'
  
 alias size='du -sh'
+
+# Macro Functions to help do annoying things
+function mcd() {
+  mkdir -p $*
+  cd $*
+}
+export -f mcd
+
